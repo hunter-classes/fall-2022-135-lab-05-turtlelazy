@@ -18,5 +18,8 @@ int main()
 	std::cout << "Number of primes between 1 and 10 is: " << countPrimes(1,10) << "\n";
 	std::cout << "Number of primes between 23 and 31 is: " << countPrimes(23, 31) << "\n";
 
+	std::cout << "17 is a twin prime: " << isTwinPrime(17) << "\n";
+	std::cout << "23 is a twin prime: " << isTwinPrime(23) << "\n";
+
 	return 0;
 }
