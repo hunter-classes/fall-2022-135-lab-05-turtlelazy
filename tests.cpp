@@ -83,3 +83,17 @@ TEST_CASE("isTwinPrime")
     CHECK(isTwinPrime(0) == false);
     CHECK(isTwinPrime(1) == false);
 }
+
+TEST_CASE("nextTwinPrime")
+{
+    //normal use case
+    CHECK(nextTwinPrime(2) == 3);
+    CHECK(nextTwinPrime(3) == 5);
+    CHECK(nextTwinPrime(7) == 11);
+    CHECK(nextTwinPrime(13) == 17);
+
+    //non prime use cases
+    CHECK(nextTwinPrime(9) == 11);
+    CHECK(nextTwinPrime(15) == 17);
+    CHECK(nextTwinPrime(1) == 3);
+}
