@@ -54,3 +54,16 @@ TEST_CASE("nextPrime")
     //one case
     CHECK(nextPrime(1) == 2);
 }
+
+TEST_CASE("countPrimes")
+{
+    //normal use case
+    CHECK(countPrimes(0,20) == 8);
+    CHECK(countPrimes(20, 25) == 1);
+
+    //inclusive case
+    CHECK(countPrimes(23, 29) == 2);
+
+    //negatives case
+    CHECK(countPrimes(-10, 20) == 8);
+}
