@@ -97,3 +97,18 @@ TEST_CASE("nextTwinPrime")
     CHECK(nextTwinPrime(15) == 17);
     CHECK(nextTwinPrime(1) == 3);
 }
+
+TEST_CASE("largestTwinPrime")
+{
+    //normal use case
+    CHECK(largestTwinPrime(0,17) == 17);
+    CHECK(largestTwinPrime(0, 23) == 19);
+    CHECK(largestTwinPrime(3, 33) == 31);
+    CHECK(largestTwinPrime(5, 18) == 17);
+    CHECK(largestTwinPrime(1, 31) == 31);
+    //no twin primes in range and overlapping range
+    CHECK(largestTwinPrime(0, 2) == -1);
+    CHECK(largestTwinPrime(0, 0) == -1);
+    CHECK(largestTwinPrime(-10, 0) == -1);
+    CHECK(largestTwinPrime(14, 16) == -1);
+}
