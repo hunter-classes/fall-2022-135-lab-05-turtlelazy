@@ -7,7 +7,7 @@
 * GitHub username: turtlelazy
 
 * Notes:
-
+largestTwinPrime expects the output -1, for no twin primes within the specified range.
 
 
 * General instructions:

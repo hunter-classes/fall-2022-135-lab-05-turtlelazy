@@ -24,5 +24,8 @@ int main()
 	std::cout << "The next twin prime after 17 is: " << nextTwinPrime(17) << "\n";
 	std::cout << "The next twin prime after 4 is: " << nextTwinPrime(4) << "\n";
 
+	std::cout << "The largest twin prime within the range 5 and 18 is: " << largestTwinPrime(5, 18) << "\n";
+	std::cout << "The largest twin prime within the range 5 and 18 is: " << largestTwinPrime(14, 16) << "\n";
+
 	return 0;
 }

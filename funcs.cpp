@@ -50,3 +50,14 @@ int nextTwinPrime(int n){
     }
     return n;
 }
+
+int largestTwinPrime(int a, int b){
+    int greatest = -1;
+    while(a <= b){
+        if(isTwinPrime(a)){
+            greatest = a;
+        }
+        a = nextTwinPrime(a);
+    }
+    return greatest;
+}
