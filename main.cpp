@@ -21,5 +21,8 @@ int main()
 	std::cout << "17 is a twin prime: " << isTwinPrime(17) << "\n";
 	std::cout << "23 is a twin prime: " << isTwinPrime(23) << "\n";
 
+	std::cout << "The next twin prime after 17 is: " << nextTwinPrime(17) << "\n";
+	std::cout << "The next twin prime after 4 is: " << nextTwinPrime(4) << "\n";
+
 	return 0;
 }

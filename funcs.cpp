@@ -42,3 +42,11 @@ int countPrimes(int a, int b){
 bool isTwinPrime(int n){
     return isPrime(n-2) || isPrime(n+2);
 }
+
+int nextTwinPrime(int n){
+    n = nextPrime(n);
+    while(!isTwinPrime(n)){
+        n = nextPrime(n);
+    }
+    return n;
+}
