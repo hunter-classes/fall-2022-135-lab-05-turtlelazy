@@ -4,6 +4,9 @@
 // add functions here
 
 bool isDivisibleBy(int n, int d){
+    if(d == 0){
+        return false;
+    }
     return n % d == 0;
 }
 
