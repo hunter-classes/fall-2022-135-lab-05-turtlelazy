@@ -67,3 +67,19 @@ TEST_CASE("countPrimes")
     //negatives case
     CHECK(countPrimes(-10, 20) == 8);
 }
+
+TEST_CASE("isTwinPrime")
+{
+    //normal use case
+    CHECK(isTwinPrime(2) == false);
+    CHECK(isTwinPrime(3) == true);
+    CHECK(isTwinPrime(7) == true);
+    CHECK(isTwinPrime(9) == false);
+    CHECK(isTwinPrime(11) == true);
+
+    //non-primes
+    CHECK(isTwinPrime(-4) == false);
+    CHECK(isTwinPrime(10) == false);
+    CHECK(isTwinPrime(0) == false);
+    CHECK(isTwinPrime(1) == false);
+}
